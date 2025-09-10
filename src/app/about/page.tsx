@@ -1,4 +1,5 @@
 import React from 'react';
+import TeamSection from '../../components/TeamSection';
 
 const AboutPage: React.FC = () => (
   <main className="container mx-auto px-6 py-16">
@@ -16,6 +17,7 @@ const AboutPage: React.FC = () => (
     <p className="text-lg text-gray-700 mb-4">
       Our mission is to create a secure, connected, and convenient travel experience for all, reducing risks and promoting safe tourism across India and beyond.
     </p>
+  <TeamSection />
   </main>
 );
 

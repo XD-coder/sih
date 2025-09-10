@@ -7,6 +7,7 @@ import BenefitsSection from '../components/BenefitsSection';
 import HowItWorksSection from '../components/HowItWorksSection';
 import ImpactSection from '../components/ImpactSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import TeamSection from '../components/TeamSection';
 import CTASection from '../components/CTASection';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
@@ -254,16 +255,17 @@ const App: React.FC = () => {
       </Script>
       <a href="#main-content" className="sr-only focus:not-sr-only bg-blue-600 text-white px-4 py-2 rounded absolute top-2 left-2 z-50">Skip to main content</a>
       <div className="bg-gray-50 font-sans text-gray-900 leading-normal tracking-wide">
-        <HeroSection />
-        <ProblemStatementSection />
-        <FeaturesSection features={features} />
-        <HowItWorksSection steps={howItWorks} />
-        <BenefitsSection benefits={benefits} />
-        <ImpactSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <CTASection />
-        <Footer />
+  <HeroSection />
+  <ProblemStatementSection />
+  <FeaturesSection features={features} />
+  <HowItWorksSection steps={howItWorks} />
+  <BenefitsSection benefits={benefits} />
+  <ImpactSection />
+  <TestimonialsSection />
+  <TeamSection />
+  <FAQSection />
+  <CTASection />
+  <Footer />
       </div>
     </>
   );
