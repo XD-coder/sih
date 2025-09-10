@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import Image from 'next/image';
 
 // Type definitions for data
@@ -226,6 +227,19 @@ const App: React.FC = () => {
 
   return (
     <>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        `}
+      </Script>
       <a href="#main-content" className="sr-only focus:not-sr-only bg-blue-600 text-white px-4 py-2 rounded absolute top-2 left-2 z-50">Skip to main content</a>
       <div className="bg-gray-50 font-sans text-gray-900 leading-normal tracking-wide">
       {/* Hero Section */}
@@ -255,7 +269,7 @@ const App: React.FC = () => {
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-xl shadow-2xl"
-                unoptimized
+                loading="lazy"
               />
             </div>
           </div>
@@ -276,25 +290,25 @@ const App: React.FC = () => {
           <div className="flex flex-wrap items-start justify-center text-center">
             <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
-                <Image src="https://placehold.co/100x100/F87171/FFFFFF?text=Lost+ID" alt="Lost ID icon" className="mx-auto mb-4" width={100} height={100} unoptimized />
+                <Image src="https://placehold.co/100x100/F87171/FFFFFF?text=Lost+ID" alt="Lost ID icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
                 <h3 className="text-xl font-bold text-gray-800">Lost ID</h3>
               </div>
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
-                <Image src="https://placehold.co/100x100/FACC15/FFFFFF?text=No+Network" alt="Network dead zones icon" className="mx-auto mb-4" width={100} height={100} unoptimized />
+                <Image src="https://placehold.co/100x100/FACC15/FFFFFF?text=No+Network" alt="Network dead zones icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
                 <h3 className="text-xl font-bold text-gray-800">No Network</h3>
               </div>
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500">
-                <Image src="https://placehold.co/100x100/14B8A6/FFFFFF?text=Health+Emergency" alt="Health emergency icon" className="mx-auto mb-4" width={100} height={100} unoptimized />
+                <Image src="https://placehold.co/100x100/14B8A6/FFFFFF?text=Health+Emergency" alt="Health emergency icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
                 <h3 className="text-xl font-bold text-gray-800">Health Emergency</h3>
               </div>
             </div>
             <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-                <Image src="https://placehold.co/100x100/3B82F6/FFFFFF?text=Delayed+Help" alt="Late emergency response icon" className="mx-auto mb-4" width={100} height={100} unoptimized />
+                <Image src="https://placehold.co/100x100/3B82F6/FFFFFF?text=Delayed+Help" alt="Late emergency response icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
                 <h3 className="text-xl font-bold text-gray-800">Delayed Help</h3>
               </div>
             </div>
@@ -348,7 +362,7 @@ const App: React.FC = () => {
                     width={500}
                     height={300}
                     className="rounded-xl shadow-2xl"
-                    unoptimized
+                    loading="lazy"
                   />
                 </div>
                 <div className="md:w-1/2 md:p-8 text-center md:text-left">
@@ -404,7 +418,7 @@ const App: React.FC = () => {
                 width={400}
                 height={400}
                 className="w-full h-auto rounded-xl shadow-2xl"
-                unoptimized
+                loading="lazy"
               />
             </div>
           </div>
