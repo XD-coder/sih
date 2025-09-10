@@ -265,10 +265,10 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6">
-              The Challenge for Today's Travelers
+              The Challenge for Today&apos;s Travelers
             </h2>
             <p className="text-lg text-gray-700 mb-12">
-              "Every year, thousands of tourists face emergencies due to a lack of quick help, missing companions, or lost identification. Our system solves these problems with cutting-edge technology."
+              &quot;Every year, thousands of tourists face emergencies due to a lack of quick help, missing companions, or lost identification. Our system solves these problems with cutting-edge technology.&quot;
             </p>
           </div>
           <div className="flex flex-wrap items-start justify-center text-center">
@@ -418,13 +418,13 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <p className="text-xl italic text-gray-700 mb-4">
-                "Even without network, my SOS reached the nearest help center. This app is a lifesaver for adventurers!"
+                &quot;Even without network, my SOS reached the nearest help center. This app is a lifesaver for adventurers!&quot;
               </p>
               <p className="text-lg font-bold text-gray-800">- Jane Doe, Trekker</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <p className="text-xl italic text-gray-700 mb-4">
-                "We knew exactly where our daughter was during her trip, and that gave us complete peace of mind. Highly recommend!"
+                &quot;We knew exactly where our daughter was during her trip, and that gave us complete peace of mind. Highly recommend!&quot;
               </p>
               <p className="text-lg font-bold text-gray-800">- The Smith Family</p>
             </div>
@@ -436,7 +436,7 @@ const App: React.FC = () => {
       <section className="py-16 md:py-24 bg-blue-600 text-white text-center">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            Don't just travel, travel safe.
+            Don&apos;t just travel, travel safe.
           </h2>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
             <a href="#" className="inline-block px-8 py-4 bg-white text-blue-600 text-xl font-bold rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
