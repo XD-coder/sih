@@ -225,9 +225,11 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gray-50 font-sans text-gray-900 leading-normal tracking-wide">
+    <>
+      <a href="#main-content" className="sr-only focus:not-sr-only bg-blue-600 text-white px-4 py-2 rounded absolute top-2 left-2 z-50">Skip to main content</a>
+      <div className="bg-gray-50 font-sans text-gray-900 leading-normal tracking-wide">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white py-12 md:py-24 text-center">
+  <section className="relative overflow-hidden bg-white py-12 md:py-24 text-center" id="main-content" role="main">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 md:space-x-12">
             <div className="md:w-1/2 text-center md:text-left">
@@ -261,10 +263,10 @@ const App: React.FC = () => {
       </section>
 
       {/* Problem Statement Section */}
-      <section className="py-16 md:py-24 bg-blue-50 text-center">
+  <section className="py-16 md:py-24 bg-blue-50 text-center" aria-labelledby="problem-statement-heading">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6">
+            <h2 id="problem-statement-heading" className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6">
               The Challenge for Today&apos;s Travelers
             </h2>
             <p className="text-lg text-gray-700 mb-12">
@@ -301,9 +303,9 @@ const App: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 md:py-24 bg-white">
+  <section className="py-16 md:py-24 bg-white" aria-labelledby="features-heading">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-16">
+          <h2 id="features-heading" className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-16">
             Key Features
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -326,9 +328,9 @@ const App: React.FC = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 md:py-24 bg-blue-50">
+  <section className="py-16 md:py-24 bg-blue-50" aria-labelledby="how-it-works-heading">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-16">
+          <h2 id="how-it-works-heading" className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-16">
             How It Works
           </h2>
           <div className="flex flex-col space-y-16">
@@ -363,9 +365,9 @@ const App: React.FC = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-white">
+  <section className="py-16 md:py-24 bg-white" aria-labelledby="benefits-heading">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-16">
+          <h2 id="benefits-heading" className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-16">
             Who Benefits?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -383,9 +385,9 @@ const App: React.FC = () => {
       </section>
 
       {/* Impact Section */}
-      <section className="py-16 md:py-24 bg-blue-900 text-white">
+  <section className="py-16 md:py-24 bg-blue-900 text-white" aria-labelledby="impact-heading">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-12">
+          <h2 id="impact-heading" className="text-4xl md:text-5xl font-extrabold mb-12">
             Our Projected Impact
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -410,9 +412,9 @@ const App: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
+  <section className="py-16 md:py-24 bg-gray-50" aria-labelledby="testimonials-heading">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-12">
+          <h2 id="testimonials-heading" className="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-12">
             What Our Users Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -433,9 +435,9 @@ const App: React.FC = () => {
       </section>
 
       {/* Call to Action Banner */}
-      <section className="py-16 md:py-24 bg-blue-600 text-white text-center">
+  <section className="py-16 md:py-24 bg-blue-600 text-white text-center" aria-labelledby="cta-heading">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+          <h2 id="cta-heading" className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
             Don&apos;t just travel, travel safe.
           </h2>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
@@ -450,7 +452,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+  <footer className="bg-gray-900 text-white py-12" role="contentinfo">
         <div className="container mx-auto px-6 text-center">
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center space-y-4 sm:space-y-0">
             <div className="flex space-x-6">
@@ -482,7 +484,8 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 };
 
