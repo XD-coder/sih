@@ -16,7 +16,7 @@ const ImpactSection: React.FC = () => (
         </div>
         <div className="flex justify-center">
           <Image
-            src="https://placehold.co/400x400/1E3A8A/FFFFFF?text=Infographic"
+            src="/impact-infographic.svg"
             alt="Infographic showing social, economic, environmental, and convenience benefits"
             width={400}
             height={400}
