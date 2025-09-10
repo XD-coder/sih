@@ -15,25 +15,25 @@ const ProblemStatementSection: React.FC = () => (
       <div className="flex flex-wrap items-start justify-center text-center">
         <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
-            <Image src="https://placehold.co/100x100/F87171/FFFFFF?text=Lost+ID" alt="Lost ID icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
+            <Image src="/lost-id.svg" alt="Lost ID icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
             <h3 className="text-xl font-bold text-gray-800">Lost ID</h3>
           </div>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
-            <Image src="https://placehold.co/100x100/FACC15/FFFFFF?text=No+Network" alt="Network dead zones icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
+            <Image src="/no-network.svg" alt="Network dead zones icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
             <h3 className="text-xl font-bold text-gray-800">No Network</h3>
           </div>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500">
-            <Image src="https://placehold.co/100x100/14B8A6/FFFFFF?text=Health+Emergency" alt="Health emergency icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
+            <Image src="/health-emergency.svg" alt="Health emergency icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
             <h3 className="text-xl font-bold text-gray-800">Health Emergency</h3>
           </div>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-            <Image src="https://placehold.co/100x100/3B82F6/FFFFFF?text=Delayed+Help" alt="Late emergency response icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
+            <Image src="/delayed-help.svg" alt="Late emergency response icon" className="mx-auto mb-4" width={100} height={100} loading="lazy" />
             <h3 className="text-xl font-bold text-gray-800">Delayed Help</h3>
           </div>
         </div>

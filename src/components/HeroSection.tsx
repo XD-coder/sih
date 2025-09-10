@@ -23,8 +23,8 @@ const HeroSection: React.FC = () => (
         </div>
         <div className="md:w-1/2">
           <Image
-            src="https://placehold.co/600x400/2563EB/FFFFFF?text=Travelers+with+Smart+ID"
-            alt="Illustration of travelers with a smart ID and SOS button"
+            src="/hero-illustration.svg"
+            alt="Custom SVG illustration of travelers with a smart ID and SOS button"
             width={600}
             height={400}
             className="w-full h-auto rounded-xl shadow-2xl"
